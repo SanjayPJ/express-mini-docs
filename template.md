@@ -48,3 +48,9 @@ app.listen(3000);
 ```
 <h1>{{ title }}</h1>
 ```
+
+### Creating partials
+
+*inside views/partials create partials like _navbar.handlebars*
+
+*include it like `{{> _navbar}}`*

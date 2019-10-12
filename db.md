@@ -76,3 +76,19 @@ Idea.find({})
   });
 });
 ```
+
+*update*
+
+```
+Idea.updateOne({ _id: req.params.id }, { title: req.body.title, details: req.body.details }).then(() => {
+        res.redirect('/ideas');
+    });
+```
+
+*delete*
+
+```
+Idea.deleteOne({ _id: req.params.id }).then(() => {
+        res.redirect('/ideas');
+    });
+```

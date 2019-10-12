@@ -14,3 +14,8 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 *Install nodemon globally and run `nodemon`*
 
+### Redirect
+
+```
+res.redirect('/ideas');
+```

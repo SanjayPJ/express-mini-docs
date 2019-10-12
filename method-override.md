@@ -19,17 +19,9 @@ app.use(methodOverride('_method'))
 ```
 
 ```
-Idea.findOne({
-      _id: req.params.id
-  })
-  .then(idea => {
-      idea.title = req.body.title;
-      idea.details = req.body.details;
-
-      idea.save().then(idea => {
-          res.redirect('/ideas');
-      });
-  })
+Idea.updateOne({ _id: req.params.id }, { title: req.body.title, details: req.body.details }).then(() => {
+        res.redirect('/ideas');
+    });
 ```
 
 ```

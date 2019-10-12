@@ -50,3 +50,29 @@ mongoose.model('Ideas', IdeaSchema);
 require('./models/Idea');
 const Idea = mongoose.model("Ideas");
 ```
+
+### CRUD
+
+*create*
+```
+let newIdea = new Idea({
+  title: req.body.title,
+  details: req.body.details
+})
+
+newIdea.save( (err) => {
+  if (err) return handleError(err);
+  res.redirect('/ideas');
+})
+```
+
+*fetch*
+
+```
+Idea.find({})
+.sort({date: 'desc'}).then(ideas => {
+  res.render('index', {
+    ideas: ideas
+  });
+});
+```

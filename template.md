@@ -54,3 +54,14 @@ app.listen(3000);
 *inside views/partials create partials like _navbar.handlebars*
 
 *include it like `{{> _navbar}}`*
+
+
+### Loop Through
+
+```
+{{#each errors}}
+<div class="alert alert-danger" role="alert">
+  {{ text }}
+</div>
+{{/each}}
+```

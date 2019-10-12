@@ -7,3 +7,4 @@ Mini Documentation for Express
 - [MongoDB - Mongoose](db.md)
 - [Server Side Form Validation](validation.md)
 - [PUT and DELETE method](method-override.md)
+- [Flash Messaging](flash.md)

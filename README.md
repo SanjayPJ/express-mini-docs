@@ -1,4 +1,4 @@
-# express-mini-docs
+# Express Mini Docs
 Mini Documentation for Express
 
 - [Fundamentals](fundamentals.md)
